@@ -30,6 +30,10 @@ public class Main {
     lista.add(p1);
     lista.add(pro1);
     
+    java.util.Iterator<Persona> iter=lista.iterator();
+    while (iter.hasNext()) {
+       iter.next().muestraInformacion();
+    }
 
  }
  

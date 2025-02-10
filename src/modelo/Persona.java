@@ -56,4 +56,7 @@ public class Persona {
         return true;
     }
 
+    public void muestraInformacion(){
+        System.out.println("Persona [nombre=" + nombre + ", edad=" + edad + "]");
+    }
 }

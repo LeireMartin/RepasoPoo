@@ -22,6 +22,9 @@ public String toString() {
 public void estudiar(){
     System.out.println(" El alumno "+ getNombre() + " estudia: "+ carrera);
  }
+ public void muestraInformacion(){
+    System.out.println("Persona [nombre=" + getNombre() + ", carerra=" + carrera + "]");
+}
 
 
 }

@@ -13,6 +13,8 @@ public class Profesor extends Persona implements Trabajador{
         super(nombre, edad);
         this.especialidad = especialidad;
     }
-
+    public void muestraInformacion(){
+        System.out.println("Persona [nombre=" + getNombre() + ", especialidad=" + especialidad + "]");
+    }
 
 }
