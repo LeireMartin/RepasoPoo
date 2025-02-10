@@ -3,6 +3,7 @@ package vista;
 import java.util.ArrayList;
 import java.util.List;
 
+import modelo.Direccion;
 import modelo.Estudiante;
 import modelo.Persona;
 import modelo.Profesor;
@@ -13,9 +14,13 @@ public class Main {
     Persona p1=new Persona("Pepe", 24);
     Persona p2=new Persona("ANa", 18);
     Persona p3=new Persona("Pepe", 24);
+    Direccion d1=new Direccion("Calle", "Cuidad", "CodPos");
+    Persona p4=new Persona("Jose", 6, d1);
+
     System.out.println(p1);
     System.out.println(p2);
     System.out.println(p1.equals(p3));
+    p4.mostrarDireccion();
 
     Estudiante e1=new Estudiante("Luis", 24, "CC.Ambientales");
     System.out.println(e1);

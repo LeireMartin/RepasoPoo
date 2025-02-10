@@ -3,6 +3,7 @@ package modelo;
 public class Persona {
     private String nombre;
     private int edad;
+    private Direccion direccion;
 
     public Persona() {
     }
@@ -11,6 +12,12 @@ public class Persona {
         this.setNombre(nombre);
         this.setEdad(edad);
     }
+    public Persona(String nombre, int edad, Direccion direccion) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.direccion = direccion;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -57,6 +64,9 @@ public class Persona {
     }
 
     public void muestraInformacion(){
-        System.out.println("Persona [nombre=" + nombre + ", edad=" + edad + "]");
+        System.out.println( nombre + " tiene " + edad + " años.");
+    }
+    public void mostrarDireccion(){
+        System.out.println(this.direccion);
     }
 }

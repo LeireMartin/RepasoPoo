@@ -1,5 +1,7 @@
 package modelo;
 
+import Interfaces.Trabajador;
+
 public class Profesor extends Persona implements Trabajador{
  private String especialidad;
     @Override
@@ -14,7 +16,7 @@ public class Profesor extends Persona implements Trabajador{
         this.especialidad = especialidad;
     }
     public void muestraInformacion(){
-        System.out.println("Persona [nombre=" + getNombre() + ", especialidad=" + especialidad + "]");
+        System.out.println( getNombre() + "trabaja enseñando " + especialidad);
     }
 
 }
