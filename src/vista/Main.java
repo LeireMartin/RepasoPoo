@@ -1,5 +1,8 @@
 package vista;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import modelo.Estudiante;
 import modelo.Persona;
 import modelo.Profesor;
@@ -21,8 +24,13 @@ public class Main {
     Profesor pro1=new Profesor("Juan", 37, "Biología");
     pro1.trabajar();
 
+    List<Persona> lista=null;
+    lista=new ArrayList<Persona>();
+    lista.add(e1);
+    lista.add(p1);
+    lista.add(pro1);
     
-    
+
  }
  
 
