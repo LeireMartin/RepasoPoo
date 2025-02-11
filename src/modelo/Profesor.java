@@ -16,7 +16,7 @@ public class Profesor extends Persona implements Trabajador{
         this.especialidad = especialidad;
     }
     public void muestraInformacion(){
-        System.out.println( getNombre() + "trabaja enseñando " + especialidad);
+        System.out.println("Dr. "+getNombre() + "está enseñando " + especialidad);
     }
 
 }

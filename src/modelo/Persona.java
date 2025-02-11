@@ -1,6 +1,6 @@
 package modelo;
 
-public class Persona {
+public class Persona implements Comparable{
     private String nombre;
     private int edad;
     private Direccion direccion;
@@ -68,5 +68,16 @@ public class Persona {
     }
     public void mostrarDireccion(){
         System.out.println(this.direccion);
+    }
+
+    
+
+    @Override
+    public int compareTo(Object o) {
+        if (!(o instanceof Persona)) {
+            throw new IllegalArgumentException("El objeto no es una instancia de Persona");
+        }
+        Persona otraPersona = (Persona) o;
+        return Integer.compare(this.edad, otraPersona.edad);
     }
 }
